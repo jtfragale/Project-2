@@ -1,14 +1,33 @@
 header {
-    background: rgb(230, 230, 213);
+    background: black;
+    height: 50px;
+    opacity: .5;
+    overflow: hidden;
 }
 
 body {
-    background: url("images/hiking.jpg") no-repeat center center fixed;
+    background: url("https://i.imgur.com/6qR3LPl.jpg") no-repeat center center fixed;
     background-size: cover;
     /* background-color: black; */
 }
 
 .nav-wrapper {
     display:flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.one {
+    color: whitesmoke;
+    padding: 10px;
+}
+
+.two {
+    color: whitesmoke;
+    padding: 10px;
+}
+
+.intro {
+    color: whitesmoke;
+    text-align: left;
 }

@@ -3,7 +3,7 @@ const Hike = require("../models/Hike")
 Hike.remove({}).then(() => {
     Promise.all([
         Hike.create({
-            name: "Marys Rock",
+            name: "Mary's Rock",
             description: "This is a cool hike"
         })
     ]).then(() => {

@@ -14,6 +14,12 @@ app.get("/", (req, res) => {
     })
 })
 
+app.get("/hike/show", (req, res) => {
+    Hike.find({}).then(hikes => {
+        res.render("show", { hikes })
+    })
+})
+
 app.use("/hikes", hikeController)
 
 app.listen(4000, () => {

@@ -8,6 +8,13 @@ router.post("/", (req, res) => {
     })
 })
 
+router.get("/", (req, res) => {
+    Hike.find({})
+        .then(hikes => {
+            res.render("hike/list", { hikes })
+        })
+})
+
 router.get("/new", (req, res) => {
     res.render("hike/new")
 })

@@ -1,4 +1,14 @@
+header {
+    background: rgb(230, 230, 213);
+}
+
 body {
     background: url("images/hiking.jpg") no-repeat center center fixed;
     background-size: cover;
+    /* background-color: black; */
+}
+
+.nav-wrapper {
+    display:flex;
+    justify-content: space-between;
 }

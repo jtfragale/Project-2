@@ -4,7 +4,9 @@ const Hike = require("./models/Hike")
 const parser = require("body-parser")
 const hikeController = require("./controllers/hike")
 const app = express()
+const path = require("path")
 
+app.use(express.static(path.join(__dirname, 'public')))
 app.set("view engine", "hbs")
 app.use(parser.urlencoded({ extended: true }))
 

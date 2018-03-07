@@ -6,9 +6,8 @@ header {
 }
 
 body {
-    background: url("https://i.imgur.com/6qR3LPl.jpg") no-repeat center center fixed;
+    background: url("images/hiking.jpg") no-repeat center center fixed;
     background-size: cover;
-    /* background-color: black; */
 }
 
 .nav-wrapper {
@@ -17,14 +16,22 @@ body {
     margin: 10px;
 }
 
+.home {
+    color: whitesmoke;
+    padding: 10px;
+    text-decoration: none;
+}
+
 .one {
     color: whitesmoke;
     padding: 10px;
+    text-decoration: none;
 }
 
 .two {
     color: whitesmoke;
     padding: 10px;
+    text-decoration: none;
 }
 
 .intro {

@@ -1,6 +1,25 @@
 <h1> Hikes </h1>
 
-{{#each hikes}}
+{{!-- {{#each hikes}}
 <p>{{this.name}}</p>
 <p>{{this.description}}</p>
-<br> {{/each}}
+<br> {{/each}} --}}
+
+<section>
+    {{#each hikes}}
+    <div>
+        <div>
+            <p>{{this.name}}</p>
+            <p>{{this.description}}</p>
+        </div>
+        <div>
+            <form action="/hikes/{{this.id}}?_method=delete" method="post">
+                <input type="submit" value="Remove">
+            </form>
+        </div>
+        <div>
+            <a href="/hikes/edit/{{id}}"> Edit </a>
+        </div>
+    </div>
+    {{/each}}
+</section>

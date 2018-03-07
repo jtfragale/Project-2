@@ -1,0 +1,12 @@
+<h2>Edit: {{name}}</h2>
+
+<form action="/hikes/{{id}}?_method=put" method="post">
+    <p>
+        <label>Name:</label>
+        <input type="text" placeholder="{{name}}" name="name" />
+    </p>
+    <p>
+        <label>Description:</label>
+        <input type="text" placeholder="{{description}}" name="description" />
+        <input type="submit" value="Save">
+    </p>

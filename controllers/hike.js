@@ -33,11 +33,11 @@ router.get('/edit/:id', (req, res) => {
 })
 
 router.put('/:id', (req, res) => {
-    console.log(req.params.id)
-    console.log(req.body)
+    // console.log(req.params.id)
+    // console.log(req.body)
     Hike.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true })
         .then(hikes => {
-            console.log(hikes)
+            // console.log(hikes)
             res.redirect('/hikes')
         })
 })

@@ -1,19 +1,21 @@
-header {
-    background: black;
-    height: 50px;
-    opacity: .5;
-    overflow: hidden;
-}
 
 body {
     background: url("images/hiking.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
+header {
+    background: black;
+    height: 60px;
+    opacity: .5;
+    overflow: hidden;
+}
+
 .nav-wrapper {
-    display:flex;
+    display: flex;
     justify-content: flex-end;
     margin: 10px;
+    
 }
 
 .home {

@@ -33,6 +33,8 @@ app.delete('/', (req, res) => {
 
 app.use("/hikes", hikeController)
 
-app.listen(4000, () => {
-    console.log("listening on port 4000")
+app.set('port', process.env.PORT || 4000)
+
+app.listen(app.get('port'), () => {
+    console.log(`listening on ${app.get('port')}`)
 })

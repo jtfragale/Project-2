@@ -14,12 +14,18 @@
             <p>{{this.description}}</p>
         </div>
         <div>
-            <form action="/hikes/{{this.id}}?_method=delete" method="post">
-                <input type="submit" value="Remove">
+            <a class="edit" href="/hikes/edit/{{id}}">
+                <button>Edit</button>
+            </a>
+            <form class="delete" action="/hikes/{{this.id}}?_method=delete" method="post">
+                <input type="submit" value="Remove"> {{!--
+                <script> addEventListener('click', areYouSure)
+                    function areYouSure() {
+                        alert("Are you sure?")
+                    }
+                </script> --}}
             </form>
-        </div>
-        <div>
-            <a href="/hikes/edit/{{id}}"> Edit </a>
+
         </div>
     </div>
     {{/each}}

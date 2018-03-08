@@ -23,12 +23,11 @@ I'm going to build an app that lets users view available hikes and store ones th
 ## MVP
 
 -homepage with a list of recommended hikes
--ability to create/add hikes
+-ability to delete/add hikes
 
 ## Bronze
 
--ability to sign up and sign in
-
+-ability to edit hike
 
 ## Silver
 
@@ -38,3 +37,4 @@ I'm going to build an app that lets users view available hikes and store ones th
 
 -add pictures
 -map that shows where hikes are located in the park
+-ability to sign up and sign in

@@ -37,6 +37,15 @@ header {
 }
 
 .intro {
+    display: flex;
+    justify-content: initial;
     color: whitesmoke;
     text-align: left;
+}
+
+.section {
+    background: #E4E9EF;
+    opacity: .8;
+    margin: 50px;
+    border-radius: 5px;
 }

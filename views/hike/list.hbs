@@ -8,8 +8,9 @@
 <section>
     {{#each hikes}}
     <div>
-        <div>
-            <p>{{this.name}}</p>
+        <div class "divider"></div>
+        <div class="section">
+            <h3>{{this.name}}</h3>
             <p>{{this.description}}</p>
         </div>
         <div>
@@ -23,3 +24,22 @@
     </div>
     {{/each}}
 </section>
+
+
+{{!--
+
+<div class="divider"></div>
+<div class="section">
+    <h5></h5>
+    <p>Stuff</p>
+</div>
+<div class="divider"></div>
+<div class="section">
+    <h5>Section 2</h5>
+    <p>Stuff</p>
+</div>
+<div class="divider"></div>
+<div class="section">
+    <h5>Section 3</h5>
+    <p>Stuff</p>
+</div> --}}
